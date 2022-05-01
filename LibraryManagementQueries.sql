@@ -1,0 +1,11 @@
+create database library;
+use library;
+create table Student(Student_ID varchar(10) primary key, Student_Name varchar(30) not null, Father_Name varchar(30), Course_Name varchar(30), Branch_Name varchar(30));
+desc Student;
+select * from Student;
+create table Book(Book_Id varchar(10) primary key,Book_Name varchar(50),Book_Pub varchar(50), Book_Price double, Pub_Year int);
+desc Book;
+select * from Book;
+create table Issue(Book_Id varchar(10),Student_Id varchar(10),Issue_Date varchar(20),Due_Date varchar(20),Return_Book varchar(10));
+desc Issue;
+select * from Issue;
